@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Book';
+const description = 'Book';
+const permalink = `${Astro.site.href}book`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="book">
+  <div class="container">
+    <h1>Refactoring at Scale</h1>
+    <p>📚 Click <a href="https://www.oreilly.com/library/view/refactoring-at-scale/9781492075523/">here</a> to purchase from O'Reilly</p>
+    <img src="/assets/refactoring-at-scale.jpeg" alt="Refactoring at Scale cover photo"/>
+    <p>
+      While there are a number of books about refactoring, most of them deal with the nitty-gritty of improving small bits of code one line at a time. I believe that the most difficult part of a refactor is usually not finding the precise way to improve the code at hand, but rather everything else that needs to happen around it. In fact, I might also go so far as to say that for any large software project, the little things rarely matter; coordinating complex changes is the biggest challenge of all.
+    </p>
+    <p>
+      <i>Refactoring at Scale</i> is my attempt at helping you figure out those difficult pieces. It’s the culmination of many years of experience carrying out all sorts of refactoring projects of various scales. During my time at Slack, many of the projects I’ve led have allowed the company to scale dramatically; our product has gone from being able to support companies and communities with 25,000 members to those with a whopping 500,000.
+    </p>
+    <p>
+      The strategies we developed to refactor effectively needed to tolerate explosive organizational growth, with our engineering team growing nearly sixfold during the same period. Successfully planning and executing on a project that affects both a significant portion of your codebase and an increasing number of engineers is no small feat.
+    </p>
+    <p>
+      I hope this book gives you the tools and resources you need to do just that!
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-image {
+    float: right;
+    margin: -3em -7em 2em 2em;
+    max-width: 300px;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 1020px) {
+    .about-image {
+      float: none;
+      margin: 0 auto 2em;
+    }
+  }
+</style>

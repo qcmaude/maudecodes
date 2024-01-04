@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Speaking';
+const description = 'Speaking';
+const permalink = `${Astro.site.href}speaking`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="speaking">
+  <div class="container">
+    <h1>Speaking</h1>
+    <h3>Conferences</h3>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=oOCubxI3wmI&ab_channel=StrangeLoopConference">Strange Loop</a> in St. Louis, MO (September 2023)</li>
+      <li><a href="https://www.oreilly.com/live-events/software-development-superstream-building-better-software/0636920089546/0636920089545/">O'Reilly Software Development Superstream</a> (September 2023)</li>
+      <li><a href="https://leaddev.com/staffplus-london-2023/video/maximizing-your-impact-when-context-switching">StaffPlus</a> in London (June 2023)</li>
+      <li><a href="https://leaddev.com/new-york/staffplus/video/2023/building-koi-pond-simulating-millions-slack-clients">StaffPlus</a> in NYC (March 2023)</li>
+      <li><a href="https://www.thestrangeloop.com/2019/better-integration-tests-for-performance-monitoring.html">Strange Loop</a> in St. Louis, MO (September 2019)</li>
+      <li><a href="https://www.youtube.com/watch?v=34tLTZgvOxM&list=PLBzScQzZ83I8aBUZtZXNWZkWKEgWRffH6&index=12&t=0s&app=desktop&ab_channel=LeadDev">Lead Dev</a> in Austin, TX (December 2018)</li>
+      <li><a href="https://conferences.oreilly.com/velocity/vl-ny/public/schedule/speaker/305220.html">O'Reilly Velocity Conf</a> in New York, NY (October 2018)</li>
+    </ul>
+    <h3>Panels</h3>
+    <ul>
+      <li><a href="https://leaddev.com/hiring-onboarding-retention/leveling-your-technical-interviews">Leveling up your technical interviews</a> (Lead Dev, November 2023)
+      <li><a href="https://leaddev.com/how-are-engineering-orgs-achieving-reliability-2023">How are engineering orgs achieving reliability in 2023?</a> (Lead Dev, July 2023)</li>
+      <li><a href="https://leaddev.com/tech/ways-your-teams-can-realistically-prioritize-code-quality">Ways your team can (realistically) prioritize code quality</a> (Lead Dev, November 2022)</li>
+      <li><a href="https://leaddev.com/technical-direction-strategy/evaluating-when-its-time-tackle-technical-debt">Evaluating when it's time to tackle technical debt</a> (Lead Dev, January 2021)</li>
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-image {
+    float: right;
+    margin: -3em -7em 2em 2em;
+    max-width: 300px;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 1020px) {
+    .about-image {
+      float: none;
+      margin: 0 auto 2em;
+    }
+  }
+</style>
