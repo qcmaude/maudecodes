@@ -27,7 +27,7 @@ const permalink = `${Astro.site.href}book`;
 </BaseLayout>
 
 <style>
-  @media (max-width: 1020px) {
+  @media only screen and (min-width: 40em) {
     .wraparound-image {
       float: none;
       width: 100%;
@@ -38,5 +38,6 @@ const permalink = `${Astro.site.href}book`;
   .wraparound-image {
     float: left;
     width: 50%;
+    margin: 0 25px 5px 0;
   }
 </style>
