@@ -4,8 +4,7 @@ import mdx from '@astrojs/mdx'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://qcmaude.github.io',
-  base: '/maudecodes',
+  site: 'https://maudethecodetoad.com',
   integrations: [mdx(), svelte()],
   markdown: {
     shikiConfig: {
