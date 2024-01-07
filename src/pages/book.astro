@@ -31,13 +31,16 @@ const permalink = `${Astro.site.href}book`;
     .wraparound-image {
       float: none;
       width: 100%;
+      border-radius: 8px;
       margin: 0 auto 2em;
     }
   }
 
   .wraparound-image {
     float: left;
-    width: 50%;
+    max-width: 300px;
+    border-radius: 8px;
+    border: 1px solid black;
     margin: 0 25px 5px 0;
   }
 </style>

@@ -9,8 +9,10 @@ const permalink = `${Astro.site.href}about`;
 <BaseLayout title={title} description={description} permalink={permalink} current="about">
   <div class="container">
     <h1>Un peu about me</h1>
+    <img class="about-image" src="/assets/profile-pic.png" alt="Me speaking at StaffPlus NYC in March 2023"/>
+    <p>Hi! I'm Maude (pronounced "mode").</p>
     <p>
-      I'm a Senior Staff Engineer at <a href="https://slack.com/careers">Slack</a> where I founded and lead the backend performance infrastructure team.
+      I'm a Senior Staff Engineer at <a href="https://slack.com/careers">Slack</a> where I founded and lead the backend performance infrastructure team 🚀.
     </p>
     <p>
       I'm responsible for <b>large-scale load test tooling, performance regression monitoring,</b> and <b>successfully onboarding the world's largest companies to Slack.</b> Over the last {new Date().getFullYear() - 2016} years, I've helped the product scale from just 60,000 users per team to over 2 million. 
@@ -26,20 +28,20 @@ const permalink = `${Astro.site.href}about`;
 
 <style>
   .about-image {
-    float: right;
-    margin: -3em -7em 2em 2em;
+    float: left;
     max-width: 300px;
-  }
-
-  .about-image img {
     border-radius: 8px;
     margin-bottom: 1.5em;
+    margin: 0 15px 0 0;
   }
 
-  @media (max-width: 1020px) {
+  @media (max-width: 600px) {
     .about-image {
+      display: block;
       float: none;
-      margin: 0 auto 2em;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
     }
   }
 </style>
