@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Mentorship';
+const description = 'Mentorship opportunities';
+const permalink = `${Astro.site.href}mentorship`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="mentorship">
+  <div class="container">
+    <h1>Mentorship</h1>
+    <h2>✨ Need a new perspective? 👀 Let me help!</h2>
+    <p>This spring, I'm trying out something new. If you are a <b>mid-career individual contributor</b> in a software role who's at an inflection point, then I'd love ot chat with you! Maybe you're deciding whether to go into management or stay in an individual contributor role. Maybe you're figuring out how to make the leap to the next level. Either way, I'd love to help!</p>
+    <h2>Why work with me? Great question!</h2>
+    <p>
+      I've hit those same inflection points half a dozen times in the last few years.
+    </p>
+    <p>
+      In the span of just 15 months, my team went through <b>5 distinct managers</b> and one, big re-org. 😳 We've found more stability in the last 18 months, but each of these shifts brought up the seemingly inevitable question: "Should I step into a management role for my team?" Teammates have frequently told me I have the skillset required, and that maybe I should consider a Tech Lead Manager (TLM) role. (As of today, I've resolved to say on the technical track, for now 😉.)
+    </p>
+    <p>
+      I made the leap from <b>senior</b> to <b>staff</b> in early 2019, then more recently, to <b>senior staff</b> in 2021. I've helped tons of coworkers work towards senior, staff, and senior staff promotions over the past few years. I've sat on promotion committees and read countless "promo packets". 🎉 In fact, these are some of my favorites parts of the job!
+    </p>
+    <h2>💭 We might not be a great fit if ...</h2>
+    <ul>
+      <li>You're looking for the quickest way to rise up the ranks. I'm all for achieving goals quickly, but my approach is more about what you're getting out of your career as a whole than about maximizing title and compensation.</li>
+      <li>You're not totally sure what you're looking for. Because I'm only taking on a few folks at first, I want to make sure we're both committed to getting <i>somewhere</i> within just a few sessions. Ideally, there are some important questions that have been weighing on you that you'd like help working out the answers to.</li>
+    </ul>
+    <h2>How it all works ✍️</h2>
+    <p>
+      I'm looking to work with <b>3</b> professionals starting this spring (April 2024).
+    </p>
+    <p>
+      We'd meet <b>4 times</b> over <b>3 months</b>, each time for about an hour.
+    </p>
+    <p>
+      In our first session, we'll set up a general <b>game plan</b> for our time together, and go from there.
+    </p>
+    <p>
+      Because this is a beta program to help me gather feedback and figure out the structure I want to implement moving forward, this is all <b>free</b>. No money! 💵
+    </p>
+    <h2>Interested?</h2>
+    <p>
+      Fill out this <a href="https://forms.gle/q5SsSLtsNMa2hwxU8">form</a>. Talk soon!
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-image {
+    float: left;
+    max-width: 350px;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+    margin: 0 15px 0 0;
+  }
+
+  @media (max-width: 600px) {
+    .about-image {
+      display: block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+    }
+  }
+</style>

@@ -20,10 +20,24 @@ const permalink = `${Astro.site.href}home`;
       <br/>
       👨‍👩‍👦 Maman, wife, 👩🏻‍🍳 avid cook (when time allows)
     </p>
+    <p>
+      <img class="social" src="assets/linkedin.png"/><a href="https://www.linkedin.com/in/lemairemaude/">LinkedIn</a>
+      <span class="divider"></span>
+      <img class="social" src="assets/twitter.png"/> <a href="https://twitter.com/QcMaude">X</a>
+    </p>
   </div>
 </BaseLayout>
 
 <style>
+  .social {
+    width: 20px;
+    margin: 0 5px 0 0;
+  }
+
+  .divider {
+    padding: 0 1rem;
+  }
+
   .about-image {
     float: right;
     margin: -3em -7em 2em 2em;
