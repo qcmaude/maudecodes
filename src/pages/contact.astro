@@ -8,6 +8,17 @@ const permalink = `${Astro.site.href}writing`;
 
 <BaseLayout title={title} description={description} permalink={permalink} current="writing">
   <div class="container">
-    <iframe src="https://maudecodes.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    <h1>Get in touch</h1>
+    <p>
+      📫 Email me at <code>maude.codes [at] gmail.com</code><br/>
+      Find me on <a href="https://www.linkedin.com/in/lemairemaude/">LinkedIn</a>
+    </p>
   </div>
 </BaseLayout>
+
+<style>
+  .social {
+    width: 20px;
+    margin: 0 5px 0 0;
+  }
+</style>

@@ -1,7 +1,7 @@
 <script>
   const rootEl = typeof document !== 'undefined' ? document.documentElement : null;
   const themes = ['light', 'dark'];
-  let theme = ''
+  let theme = '';
 
   if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
     theme = localStorage.getItem('theme');
@@ -14,10 +14,14 @@
     localStorage.setItem('theme', theme);
   }
 
-  $: if (rootEl && theme === 'light') {
-    rootEl.classList.remove('theme-dark');
-  } else if (rootEl && theme === 'dark') {
-    rootEl.classList.add('theme-dark');
+  $: {
+    if (rootEl) {
+      if (theme === 'light') {
+        rootEl.classList.remove('theme-dark');
+      } else if (theme === 'dark') {
+        rootEl.classList.add('theme-dark');
+      }
+    }
   }
 
   const icons = [
@@ -42,7 +46,7 @@
       fill="currentColor"
     >
       <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-    </svg>`,
+    </svg>`
   ];
 </script>
 
